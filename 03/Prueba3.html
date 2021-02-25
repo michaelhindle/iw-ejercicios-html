@@ -42,8 +42,8 @@
                 <label for="Edad">Edad </label> 
                 <select id="Edad" name="Edad" id="Edad">
                     <optgroup>
-                        <option>Menor de 18</option>
-                        <option selected>Entre 18 y 25</option>
+                        <option  selected>Menor de 18</option>
+                        <option>Entre 18 y 25</option>
                         <option>Entre 25 y 45</option>
                         <option>Entre 45 y 65</option>
                         <option>Mas de 65</option>
@@ -53,8 +53,12 @@
                 <p>Seleciona la fecha y hora de reserva</p>
                 <input type="date">
                 <input type="time"><br><br>
-                <textarea></textarea>
+                <textarea name="Comentarios" rows="6" cols="25">Comentarios</textarea>
             </fieldset>
+            <br>
+            <input type="checkbox" name="Condicion" id="Condiciones">
+            <label for="Condiciones">Acepto las Condiciones</label><br><br>
+            <input type="submit" value="Enviar">
             
         </form>
     </body>
