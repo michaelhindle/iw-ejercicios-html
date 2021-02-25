@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reserva de sociedad</title>
+    </head>
+    <body>
+        <header>
+            <h1>Reserva de sociedad</h1>
+        </header>
+        <p>
+            Rellena el siguiente formulario para reservar la sociedad para un dia en concreto
+        </p>
+        <form action="server.php" method="POST">
+            <fieldset>
+                <legend>Datos del usuario</legend>
+                Nombre <input type="text"><br>
+                <P>¿Eres socio?</P>
+                <input type="radio" name="socio" value="Si" >Si, soy socio
+                <input type="radio" name="socio" value="No" >No soy socio <br><br>
+                Email <input type="text"><br><br>
+                Contraseña <input type="password"><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Datos de la reserva</legend>
+                Edad <select id="Edad" name="Edad">
+                    <optgroup>
+                        <option>Menor de 18</option>
+                        <option selected>Entre 18 y 25</option>
+                        <option>Entre 25 y 45</option>
+                        <option>Entre 45 y 65</option>
+                        <option>Mas de 65</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+
+        </form>
+    </body>
+</html>
