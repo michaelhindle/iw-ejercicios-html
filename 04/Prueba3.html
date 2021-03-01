@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reserva de sociedad</title>
+    </head>
+    <body>
+        <header>
+            <h1>Reserva de sociedad</h1>
+        </header>
+        <p>
+            Rellena el siguiente formulario para reservar la sociedad para un dia en concreto
+        </p>
+        
+        <form action="server.php" method="POST">
+            <fieldset>
+                <legend>Datos del usuario</legend>
+                <label for="Nombre"> Nombre</label> 
+                 <input type="text" name="Nombre" id="Nombre"><br>
+                <P>¿Eres socio?</P>
+
+                <input type="radio" name="socio" id="Si" value="Si" >
+                <label for="Si">Si, soy socio</label> 
+
+                <input type="radio" name="socio" id="No" value="No" >
+                <label for="No">No soy socio</label> 
+                
+                 <br><br>
+
+                <label for="Email">Email</label>  
+                <input type="text" name="Email" id="Email">
+                
+                <br><br>
+
+                <label for="Contraseña">Contraseña </label> 
+                <input type="password" name="password" id="Contraseña">
+                
+                <br><br>
+
+            </fieldset>
+            <fieldset>
+                <legend>Datos de la reserva</legend>
+                <label for="Edad">Edad </label> 
+                <select id="Edad" name="Edad" id="Edad">
+                    <optgroup>
+                        <option  selected>Menor de 18</option>
+                        <option>Entre 18 y 25</option>
+                        <option>Entre 25 y 45</option>
+                        <option>Entre 45 y 65</option>
+                        <option>Mas de 65</option>
+                    </optgroup>
+                </select>
+                <br>
+                <p>Seleciona la fecha y hora de reserva</p>
+                <input type="date">
+                <input type="time"><br><br>
+                <textarea name="Comentarios" rows="6" cols="25">Comentarios</textarea>
+            </fieldset>
+            <br>
+            <input type="checkbox" name="Condicion" id="Condiciones">
+            <label for="Condiciones">Acepto las Condiciones</label><br><br>
+            <input type="submit" value="Enviar">
+            
+        </form>
+    </body>
+</html>
