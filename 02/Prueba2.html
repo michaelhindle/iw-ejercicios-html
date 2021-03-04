@@ -5,6 +5,45 @@
     </head>
     <body>
         <h1>Centro educativo Egibide</h1>
+        <div id="registro">
+            <form>
+                <fieldset>
+                    <legend>Registro</legend>
+                    <br>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+                    <br>   
+                    
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" name="apellidos" id="apellidos">
+                    <br>
+
+                    <label for="Email">Email</label>
+                    <input type="text" name="Email" id="email">
+                    <br>
+
+                    <label for="campus">Elige el campus</label>
+                    <select name="campus" id="campus"> 
+                        <optgroup>
+                            <option value="Arriaga">Arriaga</option>
+                            <option value="Jesus Obrero">Jesus Obrero</option>
+                            <option value="molinuevo">Molinuevo</option>
+                            <option value="mendizorrotza">Mendizorrotza</option>
+                            <option value="Nievescano">Nieves Cano</option>
+                        </optgroup>
+                    </select>
+                    <br>
+
+                    <textarea name="Comentario" rows="6" cols="25" >Mensaje</textarea>
+                    <br>
+                </fieldset>
+            </form>
+            <input type="checkbox" name="Condiciones" id="condiciones" >
+            <label for="Condiciones">Acepto la politica de privacidad</label>
+            <br>
+
+            <input type="submit" value="Enviar" name="enviado" id="enviado">
+        </div>
         <div id="historia">
             <h2>Historia</h2>
             <p>En mayo de 2012 nace EGIBIDE como resultado de la union de Diocesanas y 
